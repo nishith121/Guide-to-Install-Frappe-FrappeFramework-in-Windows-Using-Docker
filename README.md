@@ -30,6 +30,7 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
     development/vscode-example folder to development/.vscode folder
    
 ### STEP 4 Install VSCode Remote Containers extension
+    Launch Docker Desktop and do the signup/Login in Docker.
     
     Open vscode and install 'Dev Containers' extension
 
@@ -93,15 +94,17 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
 ### STEP 10 Install ERPNext
     
     bench get-app --branch version-14 --resolve-deps erpnext
-    bench --site d-code.localhost install-app erpnext
+    bench --site myfrappe.localhost install-app erpnext
     
     
-    
+ on your site name do not forget to mention .localhost    
     
 ### STEP 11 Start Frappe bench 
     
     bench start
     
-  You can now login with user Administrator and the password you choose when creating the site. Your website will now be accessible at location d-code.localhost:8000
+  You can now login with user Administrator and the password you choose when creating the site. Your website will now be accessible at location myfrappe.localhost:8000
+
+  
     
    
