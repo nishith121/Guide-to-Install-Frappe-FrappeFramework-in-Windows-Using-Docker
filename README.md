@@ -82,13 +82,13 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
    sitename MUST end with .localhost for trying deployments locally.
    MariaDB root password: 123
     
-    bench new-site d-code.localhost --no-mariadb-socket 
+    bench new-site myfrappe.localhost --no-mariadb-socket 
     
     
 ### STEP 9 Set bench developer mode on the new site
     
-    bench --site d-code.localhost set-config developer_mode 1
-    bench --site d-code.localhost clear-cache   
+    bench --site myfrappe.localhost set-config developer_mode 1
+    bench --site myfrappe.localhost clear-cache   
     
     
 ### STEP 10 Install ERPNext
