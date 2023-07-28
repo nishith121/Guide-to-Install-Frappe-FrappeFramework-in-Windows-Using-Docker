@@ -32,7 +32,9 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
 ### STEP 4 Install VSCode Remote Containers extension
     
     Open vscode and install 'Dev Containers' extension
-    
+
+    If you face issue while opening Remote Dev Contrainers in Visual Studio then Downgrade Docker Containers Version to v0.251.0. 
+
 ###  STEP 5 After the extensions are installed, you can
 
   Open frappe_docker folder in VS Code.
@@ -45,6 +47,7 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
    Error starting userland proxy: listen tcp 0.0.0.0:80: bind: An attempt was made to access a socket in a way forbidden by its access permissions
 	
     netsh http add iplisten ipaddress=::
+    Above command need to run in Windows Power Shell with Administrator 
                 
    The development directory is ignored by git. It is mounted and available inside the container. Create all your benches (installations of bench, the tool that          manages frappe) inside this directory.
    Node v14 and v10 are installed. Check with nvm ls. Node v14 is used by default.
